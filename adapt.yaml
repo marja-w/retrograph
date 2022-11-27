@@ -15,11 +15,13 @@ spec:
               value: "/home/stud/wahl"
           resources:
             limits:
+              nvidia.com/gpu: "1"
               cpu: "10"
-              memory: "8Gi"
+              memory: "10Gi"
             requests:
+              nvidia.com/gpu: "1"
               cpu: "10"
-              memory: "8Gi"
+              memory: "10Gi"
           command: ["/home/stud/wahl/retrograph/4_pretrain-adapter.sh"]
           volumeMounts:
             - mountPath: /home/stud/wahl # directory IN the container

@@ -1,1 +1,2 @@
-docker build -t ls6-stud-registry
+login:
+	ssh vingilot

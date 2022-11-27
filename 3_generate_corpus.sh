@@ -9,7 +9,7 @@
 RANDOM_WALKS_SCRIPTS=randomwalks_utility
 DATA_SCRIPTS=data_utility
 
-python3.6 $RANDOM_WALKS_SCRIPTS/create_corpora_from_random_walks.py
+python $RANDOM_WALKS_SCRIPTS/create_corpora_from_random_walks.py
 
 # COMMENTS - NIKOLAI
 #create_pretraining_data.py OR
@@ -30,6 +30,6 @@ INPUT_FILE=randomwalks/rw_corpus_1.0_1.0_2_15_nl.txt
 OUTPUT_FILE=randomwalks/rw_corpus_1.0_1.0_2_15_nl.tf
 
 
-python3.6 $DATA_SCRIPTS/create_pretraining_data_wo_nsp.py --input_file $INPUT_FILE --output_file $OUTPUT_FILE --vocab_file $VOCAB_FILE
+python $DATA_SCRIPTS/create_pretraining_data_wo_nsp.py --input_file $INPUT_FILE --output_file $OUTPUT_FILE --vocab_file $VOCAB_FILE
 
 # python3.6 $DATA_SCRIPTS/create_pretraining_data.py --input_file $INPUT_FILE --output_file $OUTPUT_FILE --vocab_file $VOCAB_FILE

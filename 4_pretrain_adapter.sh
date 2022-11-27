@@ -18,6 +18,6 @@ OUTPUT_DIR=models/output_pretrain_adapter
 
 mkdir -p $OUTPUT_DIR
 
-python3.6 $TRAINING_UTILITY/run_pretraining_wo_nsp_adapter.py --input_file $INPUT_FILE --output_dir $OUTPUT_DIR \
+python ./training_utility/run_pretraining_wo_nsp_adapter.py --input_file $INPUT_FILE --output_dir $OUTPUT_DIR \
     --bert_config_file $BERT_CONFIG_FILE \
     --do_train True

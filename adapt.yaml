@@ -22,7 +22,7 @@ spec:
               nvidia.com/gpu: "1"
               cpu: "10"
               memory: "10Gi"
-          command: ["/home/stud/wahl/retrograph/4_pretrain-adapter.sh"]
+          command: ["/home/stud/wahl/retrograph/4_pretrain_adapter.sh"]
           volumeMounts:
             - mountPath: /home/stud/wahl # directory IN the container
               name: home # matches volume-name from below
